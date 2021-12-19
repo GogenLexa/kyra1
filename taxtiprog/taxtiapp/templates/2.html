@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+{% load static %}
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Sign In/Up Form Transitions</title>
+  
+  
+  
+       <link href="{% static 'css/style.css' %}"  rel="stylesheet" >
+
+  
+</head>
+
+<body>
+  <body>
+  <div style="color:red;  position : absolute;top :10%;left :42%; height:12%; width:38% background: #007E3E;
+    padding: 10px;border-radius: 5px; " >
+
+					{{ error_message }}
+			</div>
+<form method="post"  >
+  <input checked="" id="signin" name="action" type="radio" value="signin">
+  <label for="signin" >Войти</label>
+     <a href="../page_registr.html" ><div >Зарегистрироваться</div></a>
+ {% csrf_token %}
+  <div id="wrapper">
+    <div id="arrow"></div>
+    <input id="email" placeholder="Login" type="text" name="log_login">
+    <input id="pass" placeholder="Password" type="password" name="log_pass" >
+  </div>
+  <button type="submit" >
+    <span>
+      <br>
+      Войти
+      <br>
+
+    </span>
+  </button>
+</form>
+
+</body>
+  
+  
+</body>
+</html>

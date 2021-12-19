@@ -1,0 +1,586 @@
+*{
+    margin: 0;
+}
+header{
+    width: 100%;
+    height: 120px;
+    background: #666;
+    display: flex;
+    justify-content: space-between;
+}
+.header-distributed .header-left,
+.header-distributed .header-center,
+.header-distributed .header-right{
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* LEFT*/
+.header-distributed h3{
+  color:  #ffffff;
+  font: normal 36px 'Open Sans', cursive;
+  margin: 0;
+   margin-left: 200px;
+    margin-top: 25px;
+    height: 100px;
+}
+
+.header-distributed h3 span{
+  color:  lightseagreen;
+}
+
+
+/* LINKD HED*/
+
+.header-distributed .header-links{
+  color:  #ffffff;
+  margin: 35px 0 12px;
+  padding: 10;
+
+}
+
+.header-distributed .header-links a{
+  display:inline-block;
+  line-height: 1.8;
+  font-weight:400;
+  text-decoration: none;
+  color:  inherit;
+
+  border: 3px inset white;
+  border-radius: 30px;
+  padding: 5px;
+margin:  0 100px ;
+}
+.header-distributed .header-links з{
+  display:inline-block;
+  line-height: 1.8;
+  font-weight:400;
+  text-decoration: none;
+  color:  inherit;
+  border: 3px inset white;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+
+.social-icons {
+    margin-right: 200px;
+    text-align: center;
+    margin-top: 15px;
+  }  
+.social-icons li {
+  display:inline-block;
+  list-style-type:none;
+  
+  }
+.social-icons li a {
+  border-bottom: none;
+  }
+.social-icons li img {
+  width:70px;
+  height:70px;
+  margin-right: 20px;
+}
+
+
+
+
+
+
+main {
+     width:100%; /* Длина фигуры */
+    height:1140px;
+     height:auto;
+    background: url(../pic/3.jpg) no-repeat center center fixed;
+        background-size: cover;
+    
+}
+.anal_pain{
+ height:1140px;}
+
+.main-window{
+position: relative;
+
+ width:1000px; /* Длина фигуры */
+ height:500px; /* Высота фигуры */
+ 
+background: linear-gradient(180deg, #FFFFFF 0%, #F1FFE8 100%);
+ border: 3px #CCCCCC solid; /* стили рамки */
+ border-radius: 10px; /* закругление углов для всех, кто понимает */
+ padding: 5px; /* внутренние отступы */
+display:block; /*Делаем блочный элемент*/
+top: 20%;
+
+ margin:auto;/*Задаем автоматический внешний отступ*/
+ width:50%;
+    
+}
+.main-window1{
+position: relative;
+
+ width:1000px; /* Длина фигуры */
+ height:450px; /* Высота фигуры */
+
+background: radial-gradient(at top, #FEFFFF, #A7CECC);
+ border: 3px #CCCCCC solid; /* стили рамки */
+ border-radius: 10px; /* закругление углов для всех, кто понимает */
+ padding: 5px; /* внутренние отступы */
+display:block; /*Делаем блочный элемент*/
+top: 8%;
+
+ margin:auto;/*Задаем автоматический внешний отступ*/
+ width:50%;
+
+}
+.main-window3{
+position: relative;
+
+ width:1000px; /* Длина фигуры */
+ height: auto; /* Высота фигуры */
+
+background: linear-gradient(180deg, #FFFFFF 0%, #F1FFE8 100%);
+ border: 3px #CCCCCC solid; /* стили рамки */
+ border-radius: 10px; /* закругление углов для всех, кто понимает */
+ padding: 5px; /* внутренние отступы */
+display:block; /*Делаем блочный элемент*/
+top: 10%;
+
+ margin:auto;/*Задаем автоматический внешний отступ*/
+ width:50%;
+
+}
+.main-window6{
+position: relative;
+
+ width:1000px; /* Длина фигуры */
+ height:600px; /* Высота фигуры */
+
+background: radial-gradient(at top, #FEFFFF, #A7CECC);
+ border: 3px #CCCCCC solid; /* стили рамки */
+ border-radius: 10px; /* закругление углов для всех, кто понимает */
+ padding: 5px; /* внутренние отступы */
+display:block; /*Делаем блочный элемент*/
+top: 8%;
+
+ margin:auto;/*Задаем автоматический внешний отступ*/
+ width:50%;
+
+}
+.log{
+top 100px;
+margin 100px;
+padding 100px;
+}
+
+.swap_acc {
+  position: relative;
+  display: inline-block;
+  width: 10em;
+  height: 2.5em;
+  line-height: 2.5em;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 -1px 1px #777;
+  color: #fff;
+  outline: none;
+  border: 2px solid #F64C2B;
+  border-radius: 5px;
+  box-shadow: 0 0 0 60px rgba(0,0,0,0) inset, .1em .1em .2em #800;
+  background: linear-gradient(#FB9575, #F45A38 48%, #EA1502 52%, #F02F17);
+}
+
+swap_acc:active {
+  top: .1em;
+  left: .1em;
+  box-shadow: 0 0 0 60px rgba(0,0,0,.05) inset;
+}
+
+
+.work-pad {
+    border:none;
+    
+}
+.second-form,.first-form ,.fird-form,.ford-form{
+    border:none;
+}
+
+
+.frist{
+    border: 1px #CCCCCC solid;
+border:none;
+}
+
+/****kak dobratca*****/
+.b1 {
+    position: relative  ;
+    margin: 80px 350px 0 ;
+    padding: 40px;
+    background: linear-gradient(45deg, #EECFBA, #C5DDE8);
+    border-radius: 60px;
+    text-align: left;
+    font: bold 16px sans-serif;
+   
+}
+.b2 {
+    position: relative  ;
+    margin: 80px 350px 0 ;
+    padding: 30px;
+    background: linear-gradient(45deg, #EECFBA, #C5DDE8);
+    border-radius: 60px;
+    text-align: left;
+    font: bold 16px sans-serif;
+
+}
+.b5 {
+
+
+    visibility: hidden;
+
+}
+
+ h1, h2 {
+    text-align: left;
+    color: #006262;
+
+
+}
+.work-pad h3 {
+    text-align: left;
+    font: bold 16px sans-serif;
+    color: #006262;
+    padding: 40px 0px 20px;
+}
+
+.b3 {
+    position: relative  ;
+
+   background:linear-gradient(9deg, rgba(2,0,36,1) 0%, rgba(66,218,179,0.6166841736694677) 53%, rgba(0,212,255,1) 100%);
+    border-radius: 30px;
+    text-align: left;
+    font: bold 12px sans-serif;
+
+}
+.b8 {
+
+
+    background:linear-gradient(#FB9575, #F45A38 48%, #EA1502 52%, #F02F17);
+    border-radius: 30px;
+    text-align: left;
+    font: bold 12px sans-serif;
+
+}
+.work-pad {
+  text-align: justify;
+}
+
+.work-pad:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+.work-pad div {
+  display: inline-block;
+  
+}
+
+
+
+/* моя таблица ккккккккккккккккк*/
+
+.table {
+	width: 100%;
+	border: none;
+	margin-bottom: 20px;
+}
+.table thead th {
+	font-weight: bold;
+	text-align: left;
+	border: none;
+	padding: 10px 15px;
+	background: #d8d8d8;
+	font-size: 14px;
+}
+.table thead tr th:first-child {
+	border-radius: 8px 0 0 8px;
+}
+.table thead tr th:last-child {
+	border-radius: 0 8px 8px 0;
+}
+.table tbody td {
+	text-align: left;
+	border: none;
+	padding: 10px 15px;
+	font-size: 14px;
+	vertical-align: top;
+}
+.table tbody tr:nth-child(even){
+	background: #f3f3f3;
+}
+.table tbody tr td:first-child {
+	border-radius: 8px 0 0 8px;
+}
+.table tbody tr td:last-child {
+	border-radius: 0 8px 8px 0;
+}
+/* моя таблица ккккккккккккккккк*/
+
+/*5*/
+.gfgfg{
+
+position: relative;
+ width:1000px; /* Длина фигуры */
+ height:500px; /* Высота фигуры */
+ 
+background: #ECECEC;
+ border: 3px #CCCCCC solid; /* стили рамки */
+ border-radius: 10px; /* закругление углов для всех, кто понимает */
+ padding: 5px; /* внутренние отступы */
+display:block; /*Делаем блочный элемент*/
+top: 10%;
+
+ margin:auto;/*Задаем автоматический внешний отступ*/
+ width:50%;
+    
+}
+}
+
+
+/* Footer */
+HTML CSSResult Skip Results Iframe
+EDIT ON
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+* {
+  font-family: Open Sans;
+}
+
+section {
+  width: 100%;
+  display: inline-block;
+  background: #333;
+  height: 50vh;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.footer-distributed{
+  background: #666;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+  width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+  color:  #ffffff;
+  font: normal 36px 'Open Sans', cursive;
+  margin: 0;
+}
+
+.footer-distributed h3 span{
+  color:  lightseagreen;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+  color:  #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footer-distributed .footer-links a{
+  display:inline-block;
+  line-height: 1.8;
+  font-weight:400;
+  text-decoration: none;
+  color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+  color:  #222;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+  width: 35%;
+}
+
+.footer-distributed .footer-center i{
+  background-color:  #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+  display: inline-block;
+  color: #ffffff;
+  font-weight:400;
+  vertical-align: middle;
+  margin:0;
+}
+
+.footer-distributed .footer-center p span{
+  display:block;
+  font-weight: normal;
+  font-size:14px;
+  line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+  color:  lightseagreen;
+  text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+  width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+  line-height: 20px;
+  color:  #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+  display: block;
+  color:  #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+  margin-top: 25px;
+}
+
+/*
+.footer-distributed .footer-icons a{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color:  #33383b;
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+*/
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+  .footer-distributed{
+    font: bold 14px sans-serif;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i{
+    margin-left: 0;
+  }
+
+}
+
+@media (max-width: 880px) {
+
+  .header-distributed{
+    font: bold 14px sans-serif;
+  }
+
+  .header-distributed .header-left,
+  .header-distributed .header-center,
+  .header-distributed .header-right{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .header-distributed .header-center i{
+    margin-left: 0;
+  }
+ 
+
+}
+@media (max-width: 1100px) {
+   .b1 {
+    position: relative;
+    margin: 100px 350px 0 ;
+    padding: 50px;
+    background: linear-gradient(45deg, #EECFBA, #C5DDE8);
+    border-radius: 60px;
+    text-align: left;
+    font: bold 16px sans-serif;
+   
+}
+}

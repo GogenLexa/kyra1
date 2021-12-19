@@ -1,0 +1,274 @@
+<!DOCTYPE HTML>
+{% load static %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>taics</title>
+       <link href="{% static 'css/styl.css' %}" rel="stylesheet" >
+    </head>
+    <body>
+        <header  class="header-distributed">
+
+             <div class="header-left">
+                <h3>Tax<span>it</span></h3>
+            </div>
+
+            <div class="header-center" >
+
+                <p class="header-links">
+                  <a href="../" >Главная</a>
+
+
+                </p>
+            </div>
+
+
+             <div class="header-right">
+                <ul class="social-icons">
+                    <li><a href="#"><img src="{% static 'pic/1.png' %}" ></a></li>
+
+                </ul>
+            </div>
+
+        </header>
+
+
+
+        <main>
+            <div class="main-window3">
+
+
+                            <h1> Записать новые машины </h1>
+                        <div class=" work-pad">
+                 <form method="POST">
+                         {% csrf_token %}
+
+
+                            <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Фио водителя</th>
+                                                <th>Марка машины</th>
+                                                <th>телефон водителя</th>
+                                                <th>Цена </th>
+                                                <th>Колличество пассажиров</th>
+                                                <th>Статус машинны</th>
+                                                <th>Отправить данные</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><input class="table" type =  "text"  name = "fio" placeholder =  "Наприммер валерькив валерка валеркавич " required></td>
+                                                <td><input class="table" type =  "text"  name = "mark" placeholder =  "Наприммер ведро"required></td>
+                                                <td><input class="table" type="tel"  name="tel" required ></td>
+                                                <td><input class="table"  type =  "number"  name = "pryse1" placeholder =  "Наприммер 6" required></td>
+                                                <td> <input class="table"  type =  "number"  name = "people" placeholder =  "Наприммер 6" required></td>
+                                                <td><input  class="table"  type =  "text"  name = "stat" placeholder =  "Наприммер В сервисе"required></td>
+                                                <td><input   type="submit" class="b3" value="Отправить данные"></p></td>
+
+                                            </tr>
+                                        </tbody>
+
+
+                            </table>
+
+                     <h1> Отредактировать машины </h1>
+                    </form>
+                            <div class="vodila">
+                            {% for i in cars %}
+                                <div>
+                                    <form method="POST">
+                                        {% csrf_token %}
+
+                                                <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Фио водителя</th>
+                                                <th>Марка машины</th>
+                                                <th>телефон водителя</th>
+                                                <th>Цена </th>
+                                                <th>Колличество пассажиров</th>
+                                                <th>Статус машинны</th>
+                                                 <th>id  машины</th>
+                                                <th>Отправить данные</th>
+
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><input  class="table" type =  "text"  name = "fio_2" value="{{ i.Fio_driver}}" ></td>
+                                                <td><input  class="table" type =  "text"  name = "mark2"value="{{ i.Car_mark}}"></td>
+                                                <td><input  class="table" type="tel"  name="tel2" value="{{ i.Phone_Driver}}" ></td>
+
+                                                <td><input  class="table" type =  "number"  name = "pryse12"  value="{{ i.Price}}"></td>
+                                                <td> <input  class="table" type =  "number"  name = "people2"value="{{ i.people_num}}"></td>
+                                                <td><input  class="table" type =  "text"  name = "stat2" value="{{ i.status_Car}}"></td>
+                                                <td><input  class="table" type =  "text"  name = "id"value="{{i.pk}}"readonly></td>
+                                                <td><input type="submit" name="i.pk" class="b3" value="изменить данные"></td>
+
+                                            </tr>
+                                        </tbody>
+
+
+                                     </table>
+
+
+<!--                                         <input  class="table" type =  "text"  name = "fio_2" value="{{ i.Fio_driver}}" >-->
+<!--                                            <input  class="table" type =  "text"  name = "mark2"value="{{ i.Car_mark}}">-->
+<!--                                             <input  class="table" type="tel"  name="tel2" value="{{ i.Phone_Driver}}" >-->
+
+<!--                                               <input  class="table" type =  "text"  name = "stat2" value="{{ i.status_Car}}">-->
+
+<!--                                                <input  class="table" type =  "number"  name = "pryse12"  value="{{ i.Price}}">-->
+<!--                                        <input  class="table" type =  "number"  name = "people2"value="{{ i.people_num}}">-->
+<!--                                          <input  class="table" type =  "text"  name = "id"value="{{i.pk}}"readonly>-->
+<!--                                          <p><input type="submit" name="i.pk" class="b3" value="изменить данные"></p>-->
+
+                                    </form>
+
+                                    <form method="POST">
+                                        {% csrf_token %}
+                                        <p><input type="submit" name="y5" class="b8" value="удалить данные"></p>
+                                         <input class="b5"type =  "text"  name = "id"value="{{i.pk}}"readonly>
+                                    </form>
+
+                                </div>
+                            {% endfor %}
+
+                                <h1> Отредактировать заказы </h1>
+                            </div>
+                            {% for i in gays %}
+
+                                <div>
+                                    <form method="POST">
+                                        {% csrf_token %}
+
+
+
+
+
+
+                                                 <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>id  пользователя</th>
+                                                <th>статус заказа</th>
+                                                <th>id заказа</th>
+                                                <th>Цена </th>
+
+
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td> <input class="table" type =  "text"  name = "mark21"value="{{i.zayavka_idzayavka.Users_idUsers.pk }}"readonly></td>
+                                                <td><input class="table" type =  "text"  name = "statys1"value="{{ i.active_status}}"></td>
+                                                <td><input class="table" type =  "text"  name = "id1"value="{{i.pk}}"readonly></td>
+
+                                                <td><input type="submit" name="i1.pk" class="b3" value="изменить данные"></td>
+
+                                            </tr>
+                                        </tbody>
+
+
+                                     </table>
+
+
+
+
+                                    </form>
+                                </div>
+                            {% endfor %}
+            </div>
+                	<form  method="POST" name="swap_acc">
+                    {% csrf_token %}
+                    <input type="submit" class="swap_acc" name="cahge_acc" value="Сменить аккаунт">
+		        </form>
+            </div>
+
+            </div>
+
+
+            <div class=" info">
+                <ul class="transfer">
+<!--
+                  <p><a ><img src="pic/3.jpg"
+  width="2560" height="1440" alt="lorem"></a>
+-->
+
+                </ul>
+            </div>
+            <div class=" map2">
+             </div>
+        </main>
+
+
+    <footer class="footer-distributed">
+
+      <div class="footer-left">
+
+        <h3>Tax<span>it</span></h3>
+
+        <p class="footer-links">
+          <a href="h-p.html" class="link-1">Главная</a>
+
+          <a href="#">Заявка</a>
+          <a href="#">Профиль</a>
+          <a href="#cont">Контакты</a>
+        </p>
+
+        <p class="footer-company-name">TaxTi © 2005</p>
+      </div>
+
+      <div class="footer-center">
+
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>Екатеринбург</span>Крауля 168 </p>
+        </div>
+
+        <div>
+            <a id="cont"></a>
+          <i  class="fa fa-phone"></i>
+          <p><a href="tel: +89920173128">+8.992.017.3128</a></p>
+        </div>
+
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:support@company.com">Taxti@mail.ru</a></p>
+        </div>
+
+      </div>
+
+      <div class="footer-right">
+
+        <p class="footer-company-about">
+          <span>О компании</span>
+          Высококачественный сервис, нам доверяют.Отвезем куда нужно бысто и без проблем.
+        </p>
+
+<!--
+        <div class="footer-icons">
+
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-github"></i></a>
+
+        </div>
+-->
+
+      </div>
+
+    </footer>
+
+    </body>
+
+
+
+
+
+</html>

@@ -1,0 +1,234 @@
+
+<!DOCTYPE HTML>
+{% load static %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>taics</title>
+           <link href="{% static 'css/styl.css' %}" rel="stylesheet" >
+
+    </head>
+    <body>
+        <header  class="header-distributed">
+            
+             <div class="header-left">
+                <h3>Tax<span>it</span></h3>
+            </div>
+            
+            <div class="header-center" >
+                
+                <p class="header-links">
+                  <a href="#"  >Главная</a>
+
+                  <a href="#">Заявка</a>
+                  <a href="#cont">Контакты</a>
+                </p>
+            </div>
+            
+            
+             <div class="header-right">
+                <ul class="social-icons">
+                    <li><a href="2.html"><img src= "{% static 'pic/1.png' %}"  ></a></li>
+
+                </ul>
+            </div>
+            
+        </header>
+        
+        
+        
+        <main>
+            <div class="anal_pain">
+            <div class="main-window">
+
+   
+            <div class=" work-pad">
+
+                      <form method="POST">
+                         {% csrf_token %}
+                        <fieldset class=" first-form">
+                            <div class=" first">
+                                <h3>Откуда</h3>
+                                <input type =  "text" name = "Adress1" placeholder =  "Наприммер первоуральск" required>
+                             <h3>Куда</h3>
+                                 <input type =  "text" name = "Adress2" placeholder =  "Наприммер Екатеринбург" required>
+                            </div>
+                           <div class=" second">
+                               <h3>выберите дату</h3>
+                                   <input type="date" name="calendar" value="2021-06-01"
+    max="2023-28-12" min="2021-07-12">
+                            <h3>Количество пассажиров</h3>
+                               <input type ="number" name = "people3" placeholder =  "Наприммер 6" required>
+                            </div>
+
+                            <div class=" fird">
+                                <h3>марка машины</h3>
+
+
+                                      <p><select name="Care-mark" autofocus required>
+                                      <option>Выберите из списка марку </option>
+                                      <option>мерс</option>
+                                      <option>хендай</option>
+                                      <option>субвру</option>
+                                      <option>ладабасс</option>
+                                      <option>унитаз</option>
+                                     </select></p>
+
+                                <h3>Пожелания</h3>
+                                 <input type =  "text" name = "koment"placeholder="Введите ваше сообщение" required >
+
+
+                            </div>
+
+                                <div class=" frid"><p><input type="submit" class="b1" value="Найти машины"  href="car.html" ></p> </div>
+
+                                     </fieldset>
+
+
+                                    </form>
+<!--
+                            </div>
+<!--                   <div class=" first">-->
+<!--                    <form>-->
+<!--                        <fieldset class=" first-form">-->
+<!--                            <h3>Откуда</h3>-->
+<!--                                 <input type =  "text" name = "Adress" placeholder =  "Наприммер первоуральск"> -->
+<!--                             <h3>Куда</h3>-->
+<!--                                 <input type =  "text" name = "Adress" placeholder =  "Наприммер Екатеринбург">  -->
+<!--                            -->
+<!--                        </fieldset>-->
+<!--                    -->
+<!--                    </form>-->
+<!--                -->
+<!--                </div>-->
+
+<!--            <div class=" second">-->
+<!--                    <form>-->
+<!--                        <fieldset class=" second-form">-->
+<!--                            <h3>выберите дату</h3>-->
+<!--                                   <input type="date" name="calendar" value="2021-06-01"-->
+<!--    max="2023-28-12" min="2021-07-12">-->
+<!--                              -->
+<!--                              <h3>Количество пассажиров</h3>  <input type =  "number" name = "people" placeholder =  "Наприммер 6"> -->
+<!--                        </fieldset>-->
+<!--                    -->
+<!--                    </form>-->
+<!--                -->
+<!--                </div>-->
+<!--                <div class=" fird">-->
+<!--                    <form>-->
+<!--                        <fieldset class=" fird-form">-->
+<!--                            <h3>марка машины</h3>-->
+<!--                              <p><select name="Care-mark" autofocus>-->
+<!--                              <option>Выберите из списка марку </option>-->
+<!--                              <option>мерс</option>-->
+<!--                              <option>хендай</option>-->
+<!--                              <option>субвру</option>-->
+<!--                              <option>ладабасс</option>-->
+<!--                              <option>унитаз</option>-->
+<!--                             </select></p>-->
+<!--                            <h3>Пожелания</h3>-->
+<!--                            <textarea placeholder="Введите ваше сообщение"></textarea>-->
+<!--                        </fieldset>-->
+<!--                    -->
+<!--                    </form>-->
+<!--                -->
+<!--                </div>-->
+<!--                <div class=" ford">-->
+<!--                    <form action="car.html" target="_blank">-->
+<!--                        <fieldset class=" ford-form">-->
+<!--                           -->
+<!--                            <p><input type="submit" class="b1" value="Найти машины"  href="car.html" ></p> -->
+<!--                        </fieldset>-->
+<!--                    -->
+<!--                    </form>-->
+<!--                -->
+<!--                </div>-->
+<!--               -->
+<!--            </div>-->
+            
+             
+            </div>
+
+
+            <div class=" info">           
+                <ul class="transfer">  
+<!--
+                  <p><a ><img src="pic/3.jpg" 
+  width="2560" height="1440" alt="lorem"></a> 
+-->
+
+                </ul>
+            </div>   
+            <div class=" map2">         
+             </div>
+                </div>
+        </main>
+        
+        
+    <footer class="footer-distributed">
+
+      <div class="footer-left">
+
+        <h3>Tax<span>it</span></h3>
+
+        <p class="footer-links">
+          <a href="#" class="link-1">Главная</a>
+        
+          <a href="#">Заявка</a>
+          <a href="user.html">Профиль</a>
+          <a href="#cont">Контакты</a>
+        </p>
+
+        <p class="footer-company-name">TaxTi © 2005</p>
+      </div>
+
+      <div class="footer-center">
+
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>Екатеринбург</span>Крауля 168 </p>
+        </div>
+
+        <div>
+            <a id="cont"></a>
+          <i  class="fa fa-phone"></i>
+          <p><a href="tel: +89920173128">+8.992.017.3128</a></p>
+        </div>
+
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:support@company.com">Taxti@mail.ru</a></p>
+        </div>
+
+      </div>
+
+      <div class="footer-right">
+
+        <p class="footer-company-about">
+          <span>О компании</span>
+          Высококачественный сервис, нам доверяют.Отвезем куда нужно бысто и без проблем.
+        </p>
+
+<!--
+        <div class="footer-icons">
+
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-github"></i></a>
+
+        </div>
+-->
+
+      </div>
+
+    </footer>
+    
+    </body>
+    
+    
+      
+
+
+</html>

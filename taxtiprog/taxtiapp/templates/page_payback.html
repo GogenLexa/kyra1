@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Sign In/Up Form Transitions</title>
+  
+  
+  
+       <link href="{% static 'css/style.css' %}"  rel="stylesheet" >
+
+  
+</head>
+<body>
+  <body>
+  	<div style="color:red;  position : absolute;top :10%;left :42%; height:12%; width:38% background: #007E3E;
+    padding: 10px;border-radius: 5px; " >
+
+					{{ error_message }}
+			</div>
+      
+<form method="post" >
+  <input checked="" id="signin" name="action" type="radio" value="signin"required>
+  <label for="signin" >Введите номер карты</label>
+{% csrf_token %}
+  <div id="wrapper">
+    <div id="arrow"></div>
+   <p class="number_card">Номер карты  <input type="text" name="number_card"> </p>
+      <p class="sum_order">Сумма к оплате {{ sum_pass }}</p>
+
+  </div>
+  <button type="submit" >
+    <span>
+      <br>
+     оформить заказ
+      <br>
+
+    </span>
+  </button>
+</form>
+
+</body>
+  
+  
+</body>
+  
+
+</html>
+
+
+
