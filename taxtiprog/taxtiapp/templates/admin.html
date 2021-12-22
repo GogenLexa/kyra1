@@ -165,10 +165,18 @@
                                         <tbody>
                                             <tr>
                                                 <td> <input class="table" type =  "text"  name = "mark21"value="{{i.zayavka_idzayavka.Users_idUsers.pk }}"readonly></td>
-                                                <td><input class="table" type =  "text"  name = "statys1"value="{{ i.active_status}}"></td>
+<!--                                                <input class="table" type =  "text"  name = "statys1"value="{{ i.active_status}}">-->
+                                                <td>  <p><select class="table" name="Care-mark" autofocus required>
+
+                                      <option>{{ i.active_status}}</option>
+                                      <option>В процессе</option>
+                                      <option>Заверщен</option>
+                                      <option>Отменен</option>
+
+                                     </select></p></td>
                                                 <td><input class="table" type =  "text"  name = "id1"value="{{i.pk}}"readonly></td>
 
-                                                <td><input type="submit" name="i1.pk" class="b3" value="изменить данные"></td>
+                                                <td><h3>Пожелания</h3><input type="submit" name="i1.pk" class="b3" value="изменить данные"></td>
 
                                             </tr>
                                         </tbody>
