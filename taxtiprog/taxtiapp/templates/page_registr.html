@@ -20,13 +20,13 @@
 					{{ error_message }}
 			</div>
 <form method="post" >
-  <input checked="" id="signin" name="action" type="radio" value="signin">
+  <input checked="" id="signin" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" name="action" type="radio" value="signin">
   <label for="signin" >Зарегестрироваться</label>
 {% csrf_token %}
   <div id="wrapper">
     <div id="arrow"></div>
-    <input id="email" placeholder="Login" type="text" name="log_login">
-    <input id="pass" placeholder="Password" type="password"  name="log_pass">
+    <input id="email" placeholder="Login1!" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"type="text" name="log_login">
+    <input id="pass" placeholder="Password1!" type="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"  name="log_pass">
   </div>
   <button type="submit" >
     <span>
